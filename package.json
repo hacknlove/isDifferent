@@ -1,0 +1,33 @@
+{
+  "name": "isdifferent",
+  "version": "1.0.0",
+  "description": "function that returns true if their two parameters are different",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hacknlove/isDifferent.git"
+  },
+  "keywords": [
+    "helper",
+    "difference"
+  ],
+  "author": "Antonio Fernandez Porrua <antonio@hacknlove.org> (https://pykiss.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hacknlove/isDifferent/issues"
+  },
+  "homepage": "https://github.com/hacknlove/isDifferent#readme",
+  "devDependencies": {
+    "ava": "^2.2.0",
+    "eslint": "^6.1.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-ava": "^7.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
+}
