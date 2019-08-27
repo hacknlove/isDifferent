@@ -1,6 +1,6 @@
 {
   "name": "isdifferent",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "function that returns true if their two parameters are different",
   "main": "index.js",
   "scripts": {
