@@ -68,8 +68,5 @@ function objectIsDifferent (a, b) {
 }
 
 module.exports = isDifferent
-
-if (process.env.NODE_ENV === 'test') {
-  module.exports.arrayIsDifferent = arrayIsDifferent
-  module.exports.objectIsDifferent = objectIsDifferent
-}
+module.exports.arrayIsDifferent = arrayIsDifferent
+module.exports.objectIsDifferent = objectIsDifferent
