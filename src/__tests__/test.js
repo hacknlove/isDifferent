@@ -11,6 +11,9 @@ describe('arrayIsDifferent', () => {
     expect(arrayIsDifferent([1, 2, 3, 7], [1, 2, 3, 7])).toBe(false)
   })
 
+  it('return true if b is not an array', () => {
+    expect(arrayIsDifferent([], 'no array')).toBe(true)
+  })
   it('return true with two different arrays', () => {
     expect(arrayIsDifferent([], [1])).toBe(true)
     expect(arrayIsDifferent([1, 2, 3], [1, 2])).toBe(true)
@@ -25,6 +28,8 @@ describe('objectIsDifferent', () => {
   })
 
   it('returns true if different', () => {
+    expect(objectIsDifferent(null, {})).toBe(true)
+    expect(objectIsDifferent({}, null)).toBe(true)
     expect(objectIsDifferent({}, { a: 1 })).toBe(true)
     expect(objectIsDifferent({ a: 1, b: 2 }, { a: 1, b: 3 })).toBe(true)
   })
