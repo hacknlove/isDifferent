@@ -1,6 +1,5 @@
-const isDifferent = require('../../dist/isDifferent.es')
+import isDifferent, { arrayIsDifferent, objectIsDifferent } from '../../dist/isDifferent.es'
 
-const { arrayIsDifferent, objectIsDifferent } = isDifferent
 
 describe('arrayIsDifferent', () => {
   it('returns false with two empty arrays', () => {

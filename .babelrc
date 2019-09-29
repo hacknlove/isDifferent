@@ -1,0 +1,21 @@
+{
+  "env": {
+    "test": {
+      "presets": [[
+        "@babel/preset-env",
+        {
+          "modules": "commonjs",
+          "targets": {
+            "node": "current"
+          }
+        }]]
+    },
+    "production": {
+      "presets": [["env", {
+        "useBuiltIns": "entry",
+        "modules": false,
+        "targets": ">0.25%"
+      }]]
+    }
+  }
+}

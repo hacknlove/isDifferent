@@ -14,11 +14,11 @@ npm i isdifferent
 
 ### CDN
 ```html
-<script src="https://cdn.jsdelivr.net/npm/isdifferent@1.0.3/dist/isDifferent.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/isdifferent@1.0.4/dist/isDifferent.umd.min.js"></script>
 ```
 
 ### local
-[download](https://cdn.jsdelivr.net/npm/isdifferent@1.0.3/dist/isDifferent.umd.min.js)
+[download](https://cdn.jsdelivr.net/npm/isdifferent@1.0.4/dist/isDifferent.umd.min.js)
 
 ## Usage
 ```javascript

@@ -1,6 +1,4 @@
-const isDifferent = require('../index')
-
-const { arrayIsDifferent, objectIsDifferent } = isDifferent
+import isDifferent, { arrayIsDifferent, objectIsDifferent } from '../index'
 
 describe('arrayIsDifferent', () => {
   it('returns false with two empty arrays', () => {

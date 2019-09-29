@@ -5,7 +5,7 @@
  *
  * @returns {boolean}
  */
-function isDifferent (a, b) {
+export default function isDifferent (a, b) {
   if (a === b) {
     return false
   }
@@ -28,7 +28,7 @@ function isDifferent (a, b) {
  *
  * @returns {boolean}
  */
-function arrayIsDifferent (a, b) {
+export function arrayIsDifferent (a, b) {
   if (!Array.isArray(b)) {
     return true
   }
@@ -47,7 +47,7 @@ function arrayIsDifferent (a, b) {
  *
  * @returns {boolean}
  */
-function objectIsDifferent (a, b) {
+export function objectIsDifferent (a, b) {
   if (a === null && b !== null) {
     return true
   }
@@ -66,7 +66,3 @@ function objectIsDifferent (a, b) {
     return isDifferent(a[key], b[key])
   })
 }
-
-module.exports = isDifferent
-module.exports.arrayIsDifferent = arrayIsDifferent
-module.exports.objectIsDifferent = objectIsDifferent
