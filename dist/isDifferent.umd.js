@@ -1,7 +1,8 @@
-(function (factory) {
-typeof define === 'function' && define.amd ? define(factory) :
-factory();
-}(function () { 'use strict';
+(function (global, factory) {
+typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
+typeof define === 'function' && define.amd ? define(['exports'], factory) :
+(global = global || self, factory(global.isDifferent = {}));
+}(this, function (exports) { 'use strict';
 
 /**
  * returns true if a is deeply different than b
@@ -72,8 +73,10 @@ function objectIsDifferent (a, b) {
   })
 }
 
-module.exports = isDifferent;
-module.exports.arrayIsDifferent = arrayIsDifferent;
-module.exports.objectIsDifferent = objectIsDifferent;
+exports.arrayIsDifferent = arrayIsDifferent;
+exports.default = isDifferent;
+exports.objectIsDifferent = objectIsDifferent;
+
+Object.defineProperty(exports, '__esModule', { value: true });
 
 }));

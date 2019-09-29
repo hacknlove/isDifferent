@@ -1,5 +1,7 @@
 'use strict';
 
+Object.defineProperty(exports, '__esModule', { value: true });
+
 /**
  * returns true if a is deeply different than b
  * @param {*} a
@@ -69,6 +71,6 @@ function objectIsDifferent (a, b) {
   })
 }
 
-module.exports = isDifferent;
-module.exports.arrayIsDifferent = arrayIsDifferent;
-module.exports.objectIsDifferent = objectIsDifferent;
+exports.arrayIsDifferent = arrayIsDifferent;
+exports.default = isDifferent;
+exports.objectIsDifferent = objectIsDifferent;

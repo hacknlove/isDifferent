@@ -67,6 +67,5 @@ function objectIsDifferent (a, b) {
   })
 }
 
-module.exports = isDifferent;
-module.exports.arrayIsDifferent = arrayIsDifferent;
-module.exports.objectIsDifferent = objectIsDifferent;
+export default isDifferent;
+export { arrayIsDifferent, objectIsDifferent };
