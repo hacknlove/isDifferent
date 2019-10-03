@@ -72,5 +72,5 @@ function objectIsDifferent (a, b) {
 }
 
 exports.arrayIsDifferent = arrayIsDifferent;
-exports.default = isDifferent;
+exports.isDifferent = isDifferent;
 exports.objectIsDifferent = objectIsDifferent;

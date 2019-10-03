@@ -5,7 +5,7 @@
  *
  * @returns {boolean}
  */
-export default function isDifferent (a, b) {
+export function isDifferent (a, b) {
   if (a === b) {
     return false
   }

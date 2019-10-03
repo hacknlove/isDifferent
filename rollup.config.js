@@ -29,23 +29,12 @@ export default [
     ]
   },
 
-  // UMD Development
+  // IIFE Production
   {
     input: 'src/index.js',
     output: {
-      file: 'dist/isDifferent.umd.js',
-      format: 'umd',
-      name: 'isDifferent',
-      indent: false
-    }
-  },
-
-  // UMD Production
-  {
-    input: 'src/index.js',
-    output: {
-      file: 'dist/isDifferent.umd.min.js',
-      format: 'umd',
+      file: 'dist/isDifferent.js',
+      format: 'iife',
       name: 'isDifferent',
       indent: false
     },

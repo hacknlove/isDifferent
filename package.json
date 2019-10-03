@@ -1,6 +1,6 @@
 {
   "name": "isdifferent",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "function that returns true if their two parameters are different",
   "files": [
     "/dist"

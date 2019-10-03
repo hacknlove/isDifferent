@@ -67,5 +67,4 @@ function objectIsDifferent (a, b) {
   })
 }
 
-export default isDifferent;
-export { arrayIsDifferent, objectIsDifferent };
+export { arrayIsDifferent, isDifferent, objectIsDifferent };
