@@ -33,7 +33,7 @@ export default [
   {
     input: 'src/index.js',
     output: {
-      file: 'dist/isDifferent.js',
+      file: 'dist/isDifferent.iife.js',
       format: 'iife',
       name: 'isDifferent',
       indent: false

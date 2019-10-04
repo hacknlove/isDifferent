@@ -1,26 +1,37 @@
 # isDifferent
 ![test coverage 100%](https://img.shields.io/badge/test_coverage-100%25-brightgreen)
 ![dependencies 0](https://img.shields.io/badge/dependencies-0-brightgreen)
-![minified size 0.6k](https://img.shields.io/badge/minified_size-0.6k-brightgreen)
+![minified size 0.4k](https://img.shields.io/badge/minified_size-0.6k-brightgreen)
 
 Check deep equality of two variables
 
-## Install
+## browser
+### script
+```html
+<script src="https://cdn.jsdelivr.net/npm/isdifferent@2.0.0/dist/isDifferent.iife.js"></script>
+<script>
+  isDifferent.isDifferent('bar', 'foo') // true
+  isDifferent.isDifferent({response: 42, question: 'unknown'}, {question: 'unknown', response: 42}) // false
+</script>
+```
 
-### npm
-```sh
+### module
+```html
+<script type="module">
+  import { isDifferent } from 'https://cdn.jsdelivr.net/npm/isdifferent@2.0.0/dist/isDifferent.esm.min.js'
+
+  isDifferent('bar', 'foo') // true
+  isDifferent({response: 42, question: 'unknown'}, {question: 'unknown', response: 42}) // false
+</script>
+```
+
+## node (and browser with some bundler)
+```
 npm i isdifferent
 ```
-
-### CDN
-```html
-<script src="https://cdn.jsdelivr.net/npm/isdifferent@1.0.5/dist/isDifferent.umd.min.js"></script>
-```
-[download](https://cdn.jsdelivr.net/npm/isdifferent@1.0.5/dist/isDifferent.umd.min.js)
-
-## Usage
 ```javascript
-const isDifferent = require('isdifferent')
+import { isDifferent } from 'isdifferent'
+// or // const { isDifferent } = require('isdifferent')
 
 isDifferent('bar', 'foo') // true
 isDifferent({response: 42, question: 'unknown'}, {question: 'unknown', response: 42}) // false

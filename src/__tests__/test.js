@@ -1,4 +1,4 @@
-import isDifferent, { arrayIsDifferent, objectIsDifferent } from '../index'
+import { isDifferent, arrayIsDifferent, objectIsDifferent } from '../index'
 
 describe('arrayIsDifferent', () => {
   it('returns false with two empty arrays', () => {
