@@ -1,7 +1,7 @@
 # isDifferent
 ![test coverage 100%](https://img.shields.io/badge/test_coverage-100%25-brightgreen)
 ![dependencies 0](https://img.shields.io/badge/dependencies-0-brightgreen)
-![minified size 0.4k](https://img.shields.io/badge/minified_size-0.6k-brightgreen)
+![minified size 0.4k](https://img.shields.io/badge/minified_size-0.4k-brightgreen)
 
 Check deep equality of two variables
 
